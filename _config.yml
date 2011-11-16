@@ -1,0 +1,5 @@
+server_port: 4000
+auto: true
+
+markdown:    maruku
+permalink:   date

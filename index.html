@@ -1,0 +1,48 @@
+---
+layout: default
+title: CaryMe
+---
+
+<div class="row">
+  <div class="span11">
+    {% for post in site.posts %}
+    <div class='post'>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <div class="date">{{ post.date | date_to_string }}</div>
+      <div class="post-body">
+        {{ post.content }}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="span5">
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp: 4,
+      interval: 30000,
+      width: 'auto',
+      height: 300,
+      theme: {
+        shell: {
+          background: '#333333',
+          color: '#ffffff'
+        },
+        tweets: {
+          background: '#ffffff',
+          color: 'rgb(64, 64, 64)',
+          links: 'rgb(0, 105, 214)'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: false,
+        live: false,
+        behavior: 'all'
+      }
+    }).render().setUser('caryme').start();
+    </script>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+.body {
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.post-body {
+  padding: 10px 0px;
+}
+
+.post-body p {
+  font-size: 130%;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+}
+
+.facebook-comments {
+  margin:auto;
+}
+
+.post .date {
+  font-style: italic;
+}
+
+/*body, input, textarea {
+  font-size:15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}*/
