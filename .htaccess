@@ -501,3 +501,8 @@ Options -Indexes
 <IfModule php5_module>
 	php_value session.cookie_httponly true
 </IfModule>
+
+# ----------------------------------------------------------------------
+# Redirects for any old url I need to back support
+# ----------------------------------------------------------------------
+redirect 301 /content/unsung-gem-google-spreadsheets http://www.caryme.com/2010/04/27/unsung-gem-of-google-spreadsheets.html
