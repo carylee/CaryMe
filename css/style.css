@@ -1,110 +1,133 @@
 .body {
   margin-top: 40px;
-  padding-top: 20px;
-}
+  padding-top: 20px; }
+
+.post {
+  margin-bottom: 30px; }
+  .post .twitter-share-button, .post .fb-like {
+    float: right;
+    vertical-align: middle;
+    margin-top: 5px; }
+  .post .actions {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+.project span.tagline {
+  font-size: 150%;
+  color: #666666;
+  font-style: italic;
+  margin: 10px 0;
+  margin-bottom: 15px;
+  display: inline-block; }
 
 .post-body {
-  padding: 10px 0px;
-}
+  padding-top: 10px; }
 
 .copy > p {
   font-size: 130%;
   font-weight: 300;
-  line-height: 150%;
-}
+  line-height: 150%; }
 
 .portrait {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 h1 {
-  font-size: 40px;
-}
+  font-size: 40px; }
 
 h2 {
-  font-size: 30px;
-}
+  font-size: 30px; }
 
 .picture-bio {
-  position: relative;
-}
+  position: relative; }
 
 .twitter.btn {
   position: absolute;
   text-align: center;
   width: 270px;
   font-size: 22px;
-  bottom: 5px;
-}
+  bottom: 5px; }
 
 .bio p {
   font-size: 135%;
-  padding-top: 15px;
-}
+  padding-top: 15px; }
 
 h1 small {
-  font-size: 28px;
-}
+  font-size: 28px; }
 
 footer p {
   width: 100%;
-  text-align: center;
-}
+  text-align: center; }
 
 .facebook-comments {
-  margin:auto;
-}
+  margin: auto; }
 
 .post .date {
-  font-style: italic;
-}
+  font-style: italic; }
 
 .call-to-action {
-  font-size: 200%;
-}
+  font-size: 200%; }
 
 .snippets {
-  margin-top: 15px;
-}
+  margin-top: 15px; }
 
 .snippets p {
   font-weight: 200;
   line-height: 120%;
-  font-size: 120%;
-}
+  font-size: 120%; }
 
 .snippets h3 {
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 #signature {
   height: 25px;
   margin: 0 -10px;
   margin-bottom: -5px;
-  width: 100px;
-}
+  width: 100px; }
 
 /*body, input, textarea {
   font-size:15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }*/
+#flickr_badge_source_txt {
+  padding: 0;
+  font: 11px Arial, Helvetica, Sans serif;
+  color: #666666; }
 
-#flickr_badge_source_txt {padding:0; font: 11px Arial, Helvetica, Sans serif; color:#666666;}
-#flickr_badge_icon {display:block !important; margin:0 !important; /*border: 1px solid rgb(0, 0, 0) !important;*/}
-#flickr_icon_td {padding:0 5px 0 0 !important;}
-.flickr_badge_image {text-align:center !important;}
-.flickr_badge_image img {}
-#flickr_www {display:block; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+#flickr_badge_icon {
+  display: block !important;
+  margin: 0 !important;
+  /*border: 1px solid rgb(0, 0, 0) !important;*/ }
+
+#flickr_icon_td {
+  padding: 0 5px 0 0 !important; }
+
+.flickr_badge_image {
+  text-align: center !important; }
+
+#flickr_www {
+  display: block;
+  padding: 0 10px 0 10px !important;
+  font: 11px Arial, Helvetica, Sans serif !important;
+  color: #3993ff !important; }
+
 #flickr_badge_uber_wrapper a:hover,
 #flickr_badge_wrapper td {
-  border-top: none;
-}
+  border-top: none; }
+
 #flickr_badge_uber_wrapper a:link,
 #flickr_badge_uber_wrapper a:active,
-#flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
-#flickr_badge_wrapper {background-color:#ffffff;}
-#flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
+#flickr_badge_uber_wrapper a:visited {
+  text-decoration: none !important;
+  background: inherit !important;
+  color: #3993ff; }
 
+#flickr_badge_wrapper {
+  background-color: #ffffff; }
+
+#flickr_badge_source {
+  padding: 0 !important;
+  font: 11px Arial, Helvetica, Sans serif !important;
+  color: #666666 !important; }

@@ -2,7 +2,7 @@
 title: Re-reading the Encyclopedia
 layout: post
 ---
-My aunt, Melinda Bush, is developmentally disabled.  She is intelligent, but not fully independent.  She has a variety of psychological disorders, one of which is Obsessive-Compulsive Disorder.  One symptom of OCD is the tendency to follow routines---routines that become very difficult to break.
+My aunt, [Melinda Bush](http://mysistermelinda.blogspot.com/), is developmentally disabled.  She is intelligent, but not fully independent.  She has a variety of psychological disorders, one of which is Obsessive-Compulsive Disorder.  One symptom of OCD is the tendency to follow routines---routines that become very difficult to break.
 
 <!-- -**-END-**- -->
 My aunt's most obvious routine is reading the encyclopedia.

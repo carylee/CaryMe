@@ -1,7 +1,20 @@
 ---
 layout: default
-title: Cary Lee
+title: Blog | Cary Lee
 ---
+<div id='fb-root'>
+  <script type='text/javascript'>
+    //<![CDATA[
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=147084138730714";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    //]]>
+  </script>
+</div>
 <ul class='breadcrumb'>
   <li>
     <a href='/'>Home</a>
@@ -11,21 +24,47 @@ title: Cary Lee
     <a href='{{ page.url }}'>Blog</a>
   </li>
 </ul>
+<div class='page-header'>
+  <h1>
+    Blog
+    <small>Just a few thoughts</small>
+  </h1>
+</div>
 <div class='row'>
-  <div class='span11 offset2'>
+  <div class='span12 offset2'>
     {% for post in site.posts %}
     <div class='post'>
-      <h2>
-        <a href='{{ post.url }}'>{{ post.title }}</a>
-      </h2>
+      <div class='page-header'>
+        <h2>
+          <a href='{{ post.url }}'>{{ post.title }}</a>
+        </h2>
+      </div>
       <div class='date'>{{ post.date | date_to_string }}</div>
       <div class='post-body copy'>
         {{ post.content }}
       </div>
-      <a class='twitter-share-button' data-count='none' data-text='{{ post.title }}' data-url='{{ post.url }}' data-via='caryme' href='https://twitter.com/share'>Tweet</a>
-      <script src='//platform.twitter.com/widgets.js' type='text/javascript'></script>
+      <div class='actions'>
+        <a class='btn secondary' href='{{ post.url }}#disqus_thread'>Comments</a>
+        <a class='twitter-share-button' data-count='horizontal' data-text='{{ post.title }}' data-url='{{ post.url }}' data-via='caryme' href='https://twitter.com/share'>Tweet</a>
+        <script src='//platform.twitter.com/widgets.js' type='text/javascript'></script>
+        <div class='fb-like' data-href='{{ post.url}}' data-layout='button_count' data-send='false' data-width='90'></div>
+      </div>
     </div>
     {% endfor %}
   </div>
   <div class='span5'></div>
 </div>
+<script type='text/javascript'>
+  //<![CDATA[
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'caryme'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+  //]]>
+</script>
