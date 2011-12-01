@@ -1,5 +1,6 @@
 server_port: 4000
 auto: false
+haml_folder: _haml/*.haml
 
 markdown:    maruku
 permalink:   date

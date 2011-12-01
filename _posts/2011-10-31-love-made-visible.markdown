@@ -7,6 +7,7 @@ Warren W. Willis United Methodist Camp in Fruitland Park, Florida. At its core,
 the job of a camp counselor is simple: to engage in relational ministry with
 fourth through twelfth graders. Or, perhaps even more simply: to love the
 campers.
+<!-- -**-END-**- -->
 
 As Stephen Colbert said in [his commencement speech at my
 school](http://www.youtube.com/watch?v=YJq8pB0ivMs "Northwestern

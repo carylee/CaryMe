@@ -1,0 +1,34 @@
+\---
+layout: default
+title: Cary Lee
+\---
+.page-header
+  %h1
+    {{ page.title }}
+    %small singer, software developer, activist
+.row.picture-bio
+  .span-one-third.portrait
+    %img.thumbnail{:alt => "Cary Lee", :src => "img/cary-small.jpg", :title => "Cary Lee"}/
+  .copy.span-two-thirds.bio
+    %h2 Hi, I'm Cary
+    %p
+      I'm a student at Northwestern University studying vocal performance and
+      computer science. I'm a hacker, a baritone, an LGBT + church activist,
+      a
+      %a{:href => "http://www.northbynorthwestern.com/story/unicyclist/"} unicyclist
+      and a
+      %a{:href => "http://www.asfarasthistraingoes.com"} lover of public transit.
+    %p
+      I grew up in Orlando but left the sweltering heat for
+      %a{:href => "http://www.flickr.com/photos/the1andonlycary/5411701213/in/photostream/"} snowpocalyptic
+      Chicagoland in 2007.  Next fall, my boyfriend and I will move to Seattle where I will enter the real
+      world working at Microsoft as a Software Design Engineer in Test (SDET) on the Windows Live team.
+    %a.btn.large.primary.twitter{:href => "http://twitter.com/intent/user?screen_name=caryme", :target => "_blank"} Follow me on Twitter!
+.row.snippets
+  {% for post in site.posts limit 3 %}
+  .post-preview.span-one-third
+    %h3
+      %a{:href => "{{ post.url }}"} {{ post.title }}
+    %p {{ post.preview }}
+    %a{:href => "{{ post.url }}"} Read more
+  {% endfor %}

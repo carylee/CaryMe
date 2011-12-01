@@ -1,0 +1,23 @@
+\---
+layout: default
+title: Cary Lee
+\---
+%ul.breadcrumb
+  %li
+    %a{:href => "/"} Home
+    %span.divider /
+  %li.active
+    %a{:href => "{{ page.url }}"} Blog
+.row
+  .span11.offset2
+    {% for post in site.posts %}
+    .post
+      %h2
+        %a{:href => "{{ post.url }}"} {{ post.title }}
+      .date {{ post.date | date_to_string }}
+      .post-body.copy
+        {{ post.content }}
+      %a.twitter-share-button{"data-count" => "none", "data-text" => "{{ post.title }}", "data-url" => "{{ post.url }}", "data-via" => "caryme", :href => "https://twitter.com/share"} Tweet
+      %script{:src => "//platform.twitter.com/widgets.js", :type => "text/javascript"}
+    {% endfor %}
+  .span5

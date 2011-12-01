@@ -21,27 +21,6 @@ h1 {
   font-size: 40px;
 }
 
-h2 {
-  font-size: 30px;
-}
-
-.picture-bio {
-  position: relative;
-}
-
-.twitter.btn {
-  position: absolute;
-  text-align: center;
-  width: 270px;
-  font-size: 22px;
-  bottom: 5px;
-}
-
-.bio p {
-  font-size: 135%;
-  padding-top: 15px;
-}
-
 h1 small {
   font-size: 28px;
 }
@@ -61,29 +40,6 @@ footer p {
 
 .call-to-action {
   font-size: 200%;
-}
-
-.snippets {
-  margin-top: 15px;
-}
-
-.snippets p {
-  font-weight: 200;
-  line-height: 120%;
-  font-size: 120%;
-}
-
-.snippets h3 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-#signature {
-  height: 25px;
-  margin: 0 -10px;
-  margin-bottom: -5px;
-  width: 100px;
 }
 
 /*body, input, textarea {

@@ -8,6 +8,7 @@ Office. I find that the places where Google Docs really excels are the
 features that are unique to a cloud-based solution. The obvious feature
 of this sort is the flagship feature of Google Docs: collaborative
 editing.
+<!-- -**-END-**- -->
 
 Another cloud-unique feature that I find very useful is Google
 Spreadsheets’ `=GoogleLookup("entity"; "attribute")` function. This

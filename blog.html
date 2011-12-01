@@ -1,0 +1,31 @@
+---
+layout: default
+title: Cary Lee
+---
+<ul class='breadcrumb'>
+  <li>
+    <a href='/'>Home</a>
+    <span class='divider'>/</span>
+  </li>
+  <li class='active'>
+    <a href='{{ page.url }}'>Blog</a>
+  </li>
+</ul>
+<div class='row'>
+  <div class='span11 offset2'>
+    {% for post in site.posts %}
+    <div class='post'>
+      <h2>
+        <a href='{{ post.url }}'>{{ post.title }}</a>
+      </h2>
+      <div class='date'>{{ post.date | date_to_string }}</div>
+      <div class='post-body copy'>
+        {{ post.content }}
+      </div>
+      <a class='twitter-share-button' data-count='none' data-text='{{ post.title }}' data-url='{{ post.url }}' data-via='caryme' href='https://twitter.com/share'>Tweet</a>
+      <script src='//platform.twitter.com/widgets.js' type='text/javascript'></script>
+    </div>
+    {% endfor %}
+  </div>
+  <div class='span5'></div>
+</div>

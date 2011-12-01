@@ -2,57 +2,43 @@
 layout: default
 title: Cary Lee
 ---
-
-<div class="row">
-  <div class="span11">
-    {% for post in site.posts %}
-    <div class='post'>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <div class="date">{{ post.date | date_to_string }}</div>
-      <div class="post-body">
-        {{ post.content }}
-      </div>
-<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-via="caryme">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-    <a href="https://twitter.com/caryme" class="twitter-follow-button">Follow @caryme</a>
-<script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
-    </div>
-    {% endfor %}
+<div class='page-header'>
+  <h1>
+    {{ page.title }}
+    <small>singer, software developer, activist</small>
+  </h1>
+</div>
+<div class='row picture-bio'>
+  <div class='span-one-third portrait'>
+    <img alt='Cary Lee' class='thumbnail' src='img/cary-small.jpg' title='Cary Lee' />
   </div>
-  <div class="span5">
-    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-    <script>
-    new TWTR.Widget({
-      version: 2,
-      type: 'profile',
-      rpp: 4,
-      interval: 30000,
-      width: 'auto',
-      height: 300,
-      theme: {
-        shell: {
-          background: '#333333',
-          color: '#ffffff'
-        },
-        tweets: {
-          background: '#ffffff',
-          color: 'rgb(64, 64, 64)',
-          links: 'rgb(0, 105, 214)'
-        }
-      },
-      features: {
-        scrollbar: false,
-        loop: false,
-        live: false,
-        behavior: 'all'
-      }
-    }).render().setUser('caryme').start();
-    </script>
-<!-- Start of Flickr Badge -->
-<table id="flickr_badge_uber_wrapper" cellpadding="0" cellspacing="10"><tr><table class="media-grid" cellpadding="0" cellspacing="10" border="0" id="flickr_badge_wrapper">
-<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=3&size=m&layout=v&source=user&user=51035693821%40N01"></script>
-</table>
-</td></tr></table>
-<!-- End of Flickr Badge -->
-    
+  <div class='copy span-two-thirds bio'>
+    <h2>Hi, I'm Cary</h2>
+    <p>
+      I'm a student at Northwestern University studying vocal performance and
+      computer science. I'm a hacker, a baritone, an LGBT + church activist,
+      a
+      <a href='http://www.northbynorthwestern.com/story/unicyclist/'>unicyclist</a>
+      and a
+      <a href='http://www.asfarasthistraingoes.com'>lover of public transit.</a>
+    </p>
+    <p>
+      I grew up in Orlando but left the sweltering heat for
+      <a href='http://www.flickr.com/photos/the1andonlycary/5411701213/in/photostream/'>snowpocalyptic</a>
+      Chicagoland in 2007.  Next fall, my boyfriend and I will move to Seattle where I will enter the real
+      world working at Microsoft as a Software Design Engineer in Test (SDET) on the Windows Live team.
+    </p>
+    <a class='btn large primary twitter' href='http://twitter.com/intent/user?screen_name=caryme' target='_blank'>Follow me on Twitter!</a>
   </div>
+</div>
+<div class='row snippets'>
+  {% for post in site.posts limit 3 %}
+  <div class='post-preview span-one-third'>
+    <h3>
+      <a href='{{ post.url }}'>{{ post.title }}</a>
+    </h3>
+    <p>{{ post.preview }}</p>
+    <a href='{{ post.url }}'>Read more</a>
+  </div>
+  {% endfor %}
 </div>
