@@ -33,6 +33,7 @@ title: Blog | Cary Lee
         {{ post.content }}
       .actions
         %a.btn.secondary{:href=>"{{ post.url }}#disqus_thread"} Comments
+        %a.twitter-follow-button{:href=>"https://twitter.com/caryme", :data=>{'show-count'=>'false', :width=>"120"}} Follow @caryme
         %a.twitter-share-button{:data=>{:count=>"horizontal", :text=>"{{ post.title }}", :url=>"{{ post.url }}", :via=>"caryme"}, :href=>"https://twitter.com/share"} Tweet
         %script{:src => "//platform.twitter.com/widgets.js", :type => "text/javascript"}
         .fb-like{:data=>{:href=>"{{ post.url}}", :send=>"false", :layout=>"button_count",:width=>"90"}}
