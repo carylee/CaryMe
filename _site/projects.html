@@ -1,0 +1,169 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Projects | Cary Lee</title>
+  <meta name="description" content="The personal website of Cary Lee, a classical singer, hacker, LGBT + church activist, unicyclist, and lover of public transit.">
+  <meta name="author" content="Cary Lee">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- end CSS-->
+
+  <link rel="alternate" type="application/atom+xml" href="atom.xml">
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="fill">
+      <div class="container">
+        <a class="brand" href="/"><img id="signature" src="/img/WhiteSignature.png"></a>
+        <ul class="nav secondary-nav">
+          <li class="home"><a href="/">Home</a></li>
+          <li class="blog"><a href="/blog.html">Blog</a></li>
+          <li class="projects"><a href="/projects.html">Projects</a></li>
+          <!--<li><a href="/contact.html">Contact</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="body container">
+    <div id="main" class="content" role="main">
+      <ul class='breadcrumb'>
+  <li>
+    <a href='/'>Home</a>
+    <span class='divider'>/</span>
+  </li>
+  <li class='active'>
+    <a href='/projects.html'>Projects</a>
+  </li>
+</ul>
+<div class='page-header'>
+  <h1>
+    Projects
+    <small>What I've been working on lately</small>
+  </h1>
+</div>
+<div class='row project'>
+  <div class='span6 media-grid'>
+    <a href='https://github.com/carylee/MetroVote'>
+      <img class='thumbnail' src='/img/metrovote.jpg' />
+    </a>
+  </div>
+  <div class='span10'>
+    <h2>MetroVote</h2>
+    <span class='tagline'>a local election tracker</span>
+    <div class='copy'>
+      <p>
+        MetroVote began as a project for my journalism and technology class at Northwestern.
+        With minimal setup, it aggregates social media feeds of and news stories about candidates in local elections.
+        I'll be working on an offshoot of MetroVote for the <a href="http://knightlab.northwestern.edu/">Knight News Innovation Lab</a>
+        at Northwestern. MetroVote is a Ruby on Rails application&#8212;you can check it out on <a href="https://github.com/carylee/MetroVote">my GitHub</a>.
+      </p>
+    </div>
+  </div>
+</div>
+<div class='row project'>
+  <div class='span6 media-grid'>
+    <a href='http://goldenwriter.caryme.com'>
+      <img class='thumbnail' src='/img/goldenwriter.jpg' />
+    </a>
+  </div>
+  <div class='span10'>
+    <h2>Golden Writer</h2>
+    <span class='tagline'>the posthumous blog of Kathryn N. Bush</span>
+    <div class='copy'>
+      <p>
+        My grandmother, <a href="http://goldenwriter.caryme.com">Kathryn N.
+        Bush</a> was a writer. Most of her writings took the form of short,
+        inspirational pieces which she photocopied and mailed to her friends.
+        She called herself <a href="http://goldenwriter.caryme.com">Golden
+        Writer</a>. After she passed away in the summer of 2011, I realized
+        that she was a blogger before her time. Since then, I've scanned over
+        two hundred of her works and have been publishing them weekly on a blog
+        that I run. You can follow her on twitter at <a href="https://twitter.com/gldnwriter">@gldnwriter</a>.
+      </p>
+    </div>
+  </div>
+</div>
+<div class='row project'>
+  <div class='span6 media-grid'>
+    <a href='http://www.flickr.com/photos/gagilas/3828139856/in/photostream/' title='Image credit: gagilas on Flickr'>
+      <img class='thumbnail' src='/img/receptionist.jpg' />
+    </a>
+  </div>
+  <div class='span10'>
+    <h2>Doorman</h2>
+    <span class='tagline'>upgrade your intercom</span>
+    <div class='copy'>
+      <p>
+        Doorman acts as a middleman between you and your apartment's phone-based intercom.
+        Using doorman, you can provide your preferred guests with PIN numbers to enter at the intercom. Doorman will greet
+        them by name and let them in without calling you. When an unknown guest arrives, Doorman will
+        transfer the call to you and your roommates, so you may grant them access at your descretion. My roommates and I have been using Doorman for two years now and I'm working on a version to release to the public.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+    <footer>
+      <p>&copy; Cary Lee 2011 | @caryme | carylee at gmail dot com</p>
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="/js/plugins.js"></script>
+  <script defer src="/js/script.js"></script>
+  <div id="fb-root"></div>
+  <!-- end scripts-->
+
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UA-137272-6'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+</body>
+</html>
